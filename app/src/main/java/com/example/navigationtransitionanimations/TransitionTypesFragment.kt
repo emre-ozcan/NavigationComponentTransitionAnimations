@@ -21,7 +21,7 @@ class TransitionTypesFragment : Fragment() {
         }
 
         binding.rightToLeftTextView.setOnClickListener {
-
+            findNavController().navigate(R.id.action_transitionTypesFragment_to_nav_graph_right_to_left)
         }
 
         binding.bottomToTopTextView.setOnClickListener {

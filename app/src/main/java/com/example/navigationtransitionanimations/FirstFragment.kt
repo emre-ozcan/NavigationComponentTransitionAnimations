@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import com.example.navigationtransitionanimations.databinding.FragmentFirstBinding
 
 class FirstFragment : Fragment() {
@@ -17,7 +18,9 @@ class FirstFragment : Fragment() {
     ): View {
         _binding = FragmentFirstBinding.inflate(inflater, container, false)
 
-        binding.floatingActionButton.setOnClickListener {  }
+        binding.floatingActionButton.setOnClickListener {
+            findNavController().navigate(R.id.action_firstFragment_to_secondFragment)
+        }
 
 
         return binding.root

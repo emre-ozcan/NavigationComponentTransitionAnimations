@@ -16,7 +16,11 @@
         <action
             android:id="@+id/action_transitionTypesFragment_to_nav_graph_right_to_left"
             app:destination="@id/nav_graph_right_to_left" />
+        <action
+            android:id="@+id/action_transitionTypesFragment_to_nav_graph_bottom_to_top"
+            app:destination="@id/nav_graph_bottom_to_top" />
     </fragment>
     <include app:graph="@navigation/nav_graph_from_right" />
     <include app:graph="@navigation/nav_graph_right_to_left" />
+    <include app:graph="@navigation/nav_graph_bottom_to_top" />
 </navigation>

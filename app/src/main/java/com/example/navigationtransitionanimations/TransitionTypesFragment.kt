@@ -9,6 +9,7 @@ import androidx.navigation.fragment.findNavController
 import com.example.navigationtransitionanimations.databinding.FragmentTransitionTypesBinding
 
 class TransitionTypesFragment : Fragment() {
+
     private var _binding: FragmentTransitionTypesBinding? = null
     private val binding get() = _binding!!
     override fun onCreateView(
@@ -25,9 +26,8 @@ class TransitionTypesFragment : Fragment() {
         }
 
         binding.bottomToTopTextView.setOnClickListener {
-
+            findNavController().navigate(R.id.action_transitionTypesFragment_to_nav_graph_bottom_to_top)
         }
-
 
         return binding.root
     }

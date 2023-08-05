@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_bottom_to_top"
+    app:startDestination="@id/firstFragment3">
+
+    <fragment
+        android:id="@+id/firstFragment3"
+        android:name="com.example.navigationtransitionanimations.FirstFragment"
+        android:label="First Fragment"
+        tools:layout="@layout/fragment_first">
+        <action
+            android:id="@+id/action_firstFragment_to_secondFragment"
+            app:destination="@id/secondFragment3"
+            app:enterAnim="@anim/from_bottom"
+            app:exitAnim="@anim/to_top"
+            app:popEnterAnim="@anim/from_top"
+            app:popExitAnim="@anim/to_bottom" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondFragment3"
+        android:name="com.example.navigationtransitionanimations.SecondFragment"
+        android:label="Second Fragment"
+        tools:layout="@layout/fragment_second" />
+</navigation>

@@ -22,7 +22,6 @@ class FirstFragment : Fragment() {
             findNavController().navigate(R.id.action_firstFragment_to_secondFragment)
         }
 
-
         return binding.root
     }
 
@@ -30,6 +29,4 @@ class FirstFragment : Fragment() {
         super.onDestroyView()
         _binding = null
     }
-
-
 }
